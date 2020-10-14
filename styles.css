@@ -1,0 +1,56 @@
+body {
+	background: #CCCCFF;
+	font-family: bahnschrift;
+}
+h1 {
+	font-family: verdana;
+	font-size: 3vw;
+	text-align: center;
+	color: #FA5500;
+	text-decoration: underline;
+}
+h2 {
+	font-size: 24px;
+	text-align: left;
+	color: #2E4ED9;
+	/*font-style: italic;*/
+}
+p {
+	font-size: 18px;
+	text-align: justify;
+	color: #151550;
+}
+table {
+	text-align: center;
+	margin: 0 auto;
+	width: 75%;
+	border-collapse: collapse;
+}
+th, td {
+	border: 1px solid black;
+	padding: 8px;
+	font-family: verdana;
+}
+thead {
+	background: #003333;
+	color: white;
+	font-size: 24px;
+}
+tbody {
+	background: rgba(51, 102, 102, 0.6);
+	font-size: 18px;
+}
+.header{
+	width: calc(100% - 200px);
+	height: 150px;
+	position: relative;
+	top: 10px;
+}
+.clima {
+	float: right;
+	padding: 0;
+	margin-top: -27px;
+	margin-right: -11px;
+	margin-left: 15px;
+	margin-bottom: 15px;
+}
