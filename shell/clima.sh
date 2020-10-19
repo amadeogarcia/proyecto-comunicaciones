@@ -1,0 +1,1 @@
+httrack -qiC2%n%Ps2u1%s%uN0I0%I0p3DaK0H0%kQA25000%f#f -F "" -%F "" wttr.in/Rosario?0Fp -O1 "/mnt/c/users/amade/documents/github/proyecto-comunicaciones/.httrack" +*.css -*.png -*/adobe-fonts.github.io/*
