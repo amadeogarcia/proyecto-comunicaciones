@@ -1,5 +1,0 @@
-date	size'/'remotesize	flags(request:Update,Range state:File response:Modified,Chunked,gZipped)	statuscode	status ('servermsg')	MIME	Etag|Date	URL	localfile	(from URL)
-09:50:21	18619/18619	---MCZ	200	added ('OK')	text/html	date:Tue,%2013%20Oct%202020%2012:50:20%20GMT	http://wttr.in/Rosario?0Fpq	/mnt/c/users/amade/documents/proyecto/wttr.in/wttr.in/Rosarioca2c.html	(from )
-09:50:21	5813/5813	U--MCZ	200	updated ('OK')	text/html	date:Tue,%2013%20Oct%202020%2012:50:21%20GMT	http://wttr.in/robots.txt		(from )
-09:50:22	3591/3591	---M--	200	added ('OK')	image/png	date:Tue,%2013%20Oct%202020%2012:50:21%20GMT	http://wttr.in/Rosario_0Fpq_0pq.png	/mnt/c/users/amade/documents/proyecto/wttr.in/wttr.in/Rosario_0Fpq_0pq.png	(from http://wttr.in/Rosario?0Fpq)
-09:50:22	548/548	U-----	200	untouched ('OK')	text/css	etag:%221588239014.3939428-548-1978601605%22	http://wttr.in/files/style.css	/mnt/c/users/amade/documents/proyecto/wttr.in/wttr.in/files/style.css	(from http://wttr.in/Rosario?0Fpq)

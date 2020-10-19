@@ -1,0 +1,14 @@
+HTTP/1.1 304 Not Modified
+Connection: keep-alive
+Date: Sat, 17 Oct 2020 15:17:15 GMT
+Via: 1.1 varnish
+Cache-Control: max-age=600
+ETag: "5d97828c-13a54"
+Expires: Sat, 17 Oct 2020 14:49:53 GMT
+Age: 203
+X-Served-By: cache-scl19422-SCL
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1602947836.906210,VS0,VE1
+Vary: Accept-Encoding
+X-Fastly-Request-ID: a661b9f61569bc34533ea6a77fd2b769ef5c
