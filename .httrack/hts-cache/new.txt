@@ -1,4 +1,4 @@
 date	size'/'remotesize	flags(request:Update,Range state:File response:Modified,Chunked,gZipped)	statuscode	status ('servermsg')	MIME	Etag|Date	URL	localfile	(from URL)
-22:21:45	5631/5631	U--MCZ	200	updated ('OK')	text/html	date:Mon,%2019%20Oct%202020%2001:21:44%20GMT	http://wttr.in/robots.txt		(from )
-22:21:45	18681/18681	U--MCZ	200	updated ('OK')	text/html	date:Mon,%2019%20Oct%202020%2001:21:44%20GMT	http://wttr.in/Rosario?0Fp	/mnt/c/users/amade/documents/github/proyecto-comunicaciones/.httrack/wttr.in/Rosariob8a6.html	(from )
-22:21:45	548/548	U-----	200	untouched ('OK')	text/css	etag:%221588239014.3939428-548-1978601605%22	http://wttr.in/files/style.css	/mnt/c/users/amade/documents/github/proyecto-comunicaciones/.httrack/wttr.in/files/style.css	(from http://wttr.in/Rosario?0Fp)
+20:16:28	5609/5609	U--MCZ	200	updated ('OK')	text/html	date:Mon,%2019%20Oct%202020%2023:16:27%20GMT	http://wttr.in/robots.txt		(from )
+20:16:28	18681/18681	U--MCZ	200	updated ('OK')	text/html	date:Mon,%2019%20Oct%202020%2023:16:29%20GMT	http://wttr.in/Rosario?0Fp	/mnt/c/users/amade/documents/github/proyecto-comunicaciones/.httrack/wttr.in/Rosariob8a6.html	(from )
+20:16:28	548/548	U-----	200	untouched ('OK')	text/css	etag:%221588239014.3939428-548-1978601605%22	http://wttr.in/files/style.css	/mnt/c/users/amade/documents/github/proyecto-comunicaciones/.httrack/wttr.in/files/style.css	(from http://wttr.in/Rosario?0Fp)
