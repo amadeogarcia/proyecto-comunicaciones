@@ -1,4 +1,39 @@
 '''
+FILENAME: separate.py
+AUTHOR: Amadeo García Torrano
+CONTACT: amadeogarciatorrano@gmail.com
+VERSION: 0.0.0
+WEBSITE: https://github.com/amadeogarcia
+
+UPDATES:
+    Version 0.0.0
+    2020/10/27:1130>
+        Release version.
+
+DESCRIPTION:
+    This scripts takes a big line of HTML code and splits it
+    into small HTML files to distribute them using iframes.
+
+DISCLAIMER:
+    This code is in the public domain. Please feel free to modify,
+    use, etc however you see fit. But, please give reference to
+    original authors as a courtesy to Open Source developers.
+
+'''
+
+# See explanation below #
+def mk_substr(str, ielem, felem, inicio):
+    substr = ""
+    ipos = str.find(ielem, inicio)
+    fpos = str.find(felem, ipos)
+    if( ipos == -1 or fpos == -1 ): return "ERR", -1
+    else:
+        ipos += len(ielem)
+        for i in range(ipos, fpos):
+            substr += str[i]
+        return substr, fpos
+
+'''
 mk_substr():
     A function that creates a substring from parts of the original string. Useful for extracting data from HTML files.
     EXAMPLE:
@@ -12,19 +47,8 @@ mk_substr():
 
     See that this function returns a tuple with the final position of the main string, making it easy to use inside a loop,
     extracting multiple substrings from longs string, starting each time from a subsequent position.
-'''
 
-# See explanation above #
-def mk_substr(str, ielem, felem, inicio):
-    substr = ""
-    ipos = str.find(ielem, inicio)
-    fpos = str.find(felem, ipos)
-    if( ipos == -1 or fpos == -1 ): return "ERR", -1
-    else:
-        ipos += len(ielem)
-        for i in range(ipos, fpos):
-            substr += str[i]
-        return substr, fpos
+'''
 
 # Open a chunk of HTML code #
 rl = open("/mnt/c/users/amade/documents/github/proyecto-comunicaciones/covid19/raw_line.txt")
