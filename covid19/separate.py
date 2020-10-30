@@ -1,9 +1,9 @@
 '''
 FILENAME: separate.py
-AUTHOR: Amadeo García Torrano
-CONTACT: amadeogarciatorrano@gmail.com
-VERSION: 0.1.0
-WEBSITE: https://github.com/amadeogarcia
+AUTHOR:   Amadeo García Torrano
+CONTACT:  amadeogarciatorrano@gmail.com
+VERSION:  0.1.0
+WEBSITE:  https://github.com/amadeogarcia
 
 UPDATES:
     Version 0.0.0
@@ -52,6 +52,14 @@ extract_substr(s, open, close, start):
 
 '''
 
+# Adds some HTML lines to the string so the iframe looks prettier #
+def beautify(s):
+    style_ln = '<link rel="stylesheet" type="text/css" href="../styles.css">'
+    crlf = '\r\n'
+    open_div = '<div>'
+    close_div = '</div>'
+    return str(style_ln + crlf + open_div + s + close_div)
+
 # Open a chunk of HTML code #
 with open("/mnt/c/users/amade/documents/github/proyecto-comunicaciones/covid19/raw_line.html") as rl:
     s = rl.read()
@@ -72,8 +80,10 @@ while( i != -1 and count_row <= 10 ):
         elem, j = extract_substr(row, '<td>', '</td>', j)    # Read an element inside that row #
         # Will avoid the sixth and seventh elements (I don't want any deaths in my page) #
         if( j != -1 and count_elem != 6 and count_elem != 7 ):
-            # Create the file #
-            f_elem = open("/mnt/c/users/amade/documents/github/proyecto-comunicaciones/covid19/files/row_" + str(count_row) + "/elem_" + str(count_elem) + ".html", "w")
-            f_elem.write(elem)
+            # Prepare the HTML styling code #
+            elem = beautify(elem)
+            # Create and write the file #
+            with open("/mnt/c/users/amade/documents/github/proyecto-comunicaciones/covid19/files/row_" + str(count_row) + "/elem_" + str(count_elem) + ".html", "w") as elem_file:
+                elem_file.write(elem)
         count_elem += 1
     count_row += 1
