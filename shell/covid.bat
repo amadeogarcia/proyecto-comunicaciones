@@ -1,0 +1,1 @@
+bash /mnt/c/users/amade/documents/github/proyecto-comunicaciones/shell/covid.sh
