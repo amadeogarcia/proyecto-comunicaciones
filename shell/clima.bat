@@ -1,4 +1,4 @@
-cd "C:\Users\amade\Documents\GitHub\proyecto-comunicaciones\.httrack"
+cd "C:\Users\amade\Documents\.httrack"
 httrack "wttr.in/Rosario?0Fp" -qiC2I0H0Qu1%n%s -*.png -*/adobe-fonts.github.io/*
 xcopy Rosariob8a6.html C:\Users\amade\Documents\GitHub\proyecto-comunicaciones\clima\rosario.html /Y
 

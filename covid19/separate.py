@@ -27,15 +27,15 @@ DISCLAIMER:
 '''
 
 # See explanation below #
-def extract_substr(str, open, close, start):
+def extract_substr(s, open, close, start):
     substr = ""
-    ipos = str.find(open, start)
-    fpos = str.find(close, ipos)
+    ipos = s.find(open, start)
+    fpos = s.find(close, ipos)
     if( ipos == -1 or fpos == -1 ): return "ERR", -1
     else:
         ipos += len(open)
         for i in range(ipos, fpos):
-            substr += str[i]
+            substr += s[i]
         return substr, fpos
 
 '''
@@ -54,11 +54,10 @@ extract_substr(s, open, close, start):
 
 # Adds some HTML lines to the string so the iframe looks prettier #
 def beautify(s):
-    style_ln = '<link rel="stylesheet" type="text/css" href="../styles.css">'
-    crlf = '\r\n'
-    open_div = '<div>'
-    close_div = '</div>'
-    return str(style_ln + crlf + open_div + s + close_div)
+    STYLE_LN = '<link rel="stylesheet" type="text/css" href="../styles.css">\r\n'
+    OPEN_DIV = '<div>'
+    CLOSE_DIV = '</div>'
+    return str(STYLE_LN + OPEN_DIV + s + CLOSE_DIV)
 
 # Open a chunk of HTML code #
 with open("/mnt/c/users/amade/documents/github/proyecto-comunicaciones/covid19/raw_line.html") as rl:
