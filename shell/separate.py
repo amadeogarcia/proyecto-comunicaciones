@@ -95,7 +95,7 @@ while( i > -1 and count_row <= 10 ):
             # Prepare the HTML styling code #
             elem = beautify(elem)
             # Create and write the file #
-            with open(r"C:\Users\amade\Documents\web-comunicaciones\covid19\row_" + str(count_row) + r"\elem_" + str(count_elem) + r".html", "w") as ef:
+            with open(r"C:\Users\amade\Documents\web-comunicaciones\covid19\row_" + str(count_row) + r"\elem_" + str(count_elem) + ".html", "w") as ef:
                 ef.write(elem)
         count_elem += 1
     count_row += 1

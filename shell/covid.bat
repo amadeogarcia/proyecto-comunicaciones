@@ -1,5 +1,5 @@
 httrack -qgiC2I0H0Qu1%n%s "https://x-y.es/covid19/argentina.pais" -O1 "C:\Users\amade\Documents\web-comunicaciones\.httrack\x-y.es"
-python3 "C:\Users\amade\Documents\GitHub\proyecto-comunicaciones\shell\separate.py"
+python "C:\Users\amade\Documents\GitHub\proyecto-comunicaciones\shell\separate.py"
 
 :: -qg  -> Get the files indicated, do not seek other URLs;
 :: -iC2 -> Update the mirror in the current directory;
