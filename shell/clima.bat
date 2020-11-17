@@ -1,4 +1,4 @@
-httrack "wttr.in/Rosario?0Fp" -qiC2I0H0Qu1%n%s -*.png -*/adobe-fonts.github.io/* -O1 "C:\Users\amade\Documents\web-comunicaciones\.httrack"
+httrack -qiC2I0H0Qu1%n%s "wttr.in/Rosario?0Fp" -*.png -*/adobe-fonts.github.io/* -O1 "C:\Users\amade\Documents\web-comunicaciones\.httrack"
 
 :: -q   -> Do not ask questions;
 :: -iC2 -> Update a mirror in the current directory;
